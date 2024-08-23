@@ -1,1 +1,5 @@
-<h1>This Simple Program Parse Bash Command Line Argument in a very clean Manner without Using any Complicated Tools</h1>
+<h3>Simple BASH Program To Parse Command Line Argument</h3>
+
+<p>
+  This little piece of script Parses Bash CLI Args using While Loop and Case Statement
+</p>
