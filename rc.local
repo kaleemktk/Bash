@@ -1,0 +1,6 @@
+date_str=$(date "+%a, %b-%d")
+if [ $(id -u) -eq 0 ]; then
+	PS1='\e[1;33m\u@\e[0;91m\h\e[0m:: \e[1;32m\w\e[0m :: \e[1;35m$date_str\e[0m \n==>'
+else 
+	PS1="\e[1;33m\u@\e[0;91m\h\e[0m:: \e[1;32m\w\e[0m :: \e[1;35m$date_str\e[0m \n==>"
+fi
