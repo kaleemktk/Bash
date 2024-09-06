@@ -1,0 +1,15 @@
+set autoindent
+set smartindent
+set cursorline
+set scrolloff=3
+syntax on
+set number
+set smartcase
+set ignorecase
+set incsearch
+set hlsearch
+set statusline+=%F
+if has('mouse')
+	set mouse=a
+endif 
+
