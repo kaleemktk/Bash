@@ -1,0 +1,26 @@
+#!/bin/bash
+## Wait for $1 Seconds .... Sleep
+## return 1 on key press and 0 on no key press
+trap trap_main SIGINT
+function trap_main(){
+        exit 0
+}
+function sleep_5(){
+        time_s=$1
+        sleep $time_s
+        my_pid=$$;
+        ## Get my PPid and Kill Him
+        PPid=$(grep -i ppid /proc/${my_pid}/status)
+        kill -SIGINT ${my_pid}
+        exit 0
+}
+echo "calling sleep 5 function in BG"
+Time_to_sleep=$1
+sleep_5 $Time_to_sleep &
+pid_sleep=$!
+
+read -sr -n 1
+kill $pid_sleep
+wait
+
+exit 1
