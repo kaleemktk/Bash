@@ -2,6 +2,7 @@
 
 <p>
 <br>
-    Source This File in any bash script or source in any Init script.
+    Source This File in any bash script or source in any Init script. <br>
+    For system-wide sourcing copy to /etc/profile.d and set +x bit.
 <br>
 </p>
