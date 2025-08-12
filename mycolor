@@ -43,8 +43,8 @@ BICyan="\033[1;96m"       # Cyan
 BIWhite="\033[1;97m"      # White
 
 # High Intensty backgrounds
-On_IBlack="\033[0;0m"   # Black
-On_IBlack="\033[0;100m"   # Grey
+On_IBLACK="\033[0;0m"     # Black
+On_IGrey="\033[0;100m"    # Grey
 On_IRed="\033[0;101m"     # Red
 On_IGreen="\033[0;102m"   # Green
 On_IYellow="\033[0;103m"  # Yellow
