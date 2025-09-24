@@ -1,0 +1,10 @@
+##############################
+## Complex Fun  Alias        #
+## Easy Ones are for Loosers #
+##############################
+function findbin_fun () {
+        for i in $@; do
+                compgen -c $i | sort | uniq | xargs whereis
+        done
+}
+alias findbin='findbin_fun'     ## A Blend of "whereis" & "Autocomplete:compgen"
